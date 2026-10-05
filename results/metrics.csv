@@ -1,0 +1,17 @@
+scenario,algorithm,steps,runtime_ms,nodes_expanded,expanded_density_pct,success
+Open 10% walls,Dijkstra,48,0.89,567,100.0,True
+Open 10% walls,A* (Manhattan),48,0.899,486,85.7,True
+Open 10% walls,A* (Euclidean),48,0.927,540,95.2,True
+Open 10% walls,Q-Learning,48,290.953,566,99.8,True
+Scattered 25% walls,Dijkstra,48,0.659,458,98.1,True
+Scattered 25% walls,A* (Manhattan),48,0.323,215,46.0,True
+Scattered 25% walls,A* (Euclidean),48,0.577,371,79.4,True
+Scattered 25% walls,Q-Learning,48,336.182,459,98.3,True
+Dense 35% walls,Dijkstra,48,0.92,401,96.2,True
+Dense 35% walls,A* (Manhattan),48,0.171,107,25.7,True
+Dense 35% walls,A* (Euclidean),48,0.337,205,49.2,True
+Dense 35% walls,Q-Learning,48,392.351,402,96.4,True
+Twisty maze,Dijkstra,256,0.413,337,100.0,True
+Twisty maze,A* (Manhattan),256,0.412,317,94.1,True
+Twisty maze,A* (Euclidean),256,0.463,321,95.3,True
+Twisty maze,Q-Learning,256,977.493,336,99.7,True

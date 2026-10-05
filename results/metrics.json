@@ -1,0 +1,150 @@
+{
+  "generated": "2026-10-05T09:53:21",
+  "grid_size": 25,
+  "results": [
+    {
+      "scenario": "Open 10% walls",
+      "algorithm": "Dijkstra",
+      "steps": 48,
+      "runtime_ms": 0.89,
+      "nodes_expanded": 567,
+      "expanded_density_pct": 100.0,
+      "success": true
+    },
+    {
+      "scenario": "Open 10% walls",
+      "algorithm": "A* (Manhattan)",
+      "steps": 48,
+      "runtime_ms": 0.899,
+      "nodes_expanded": 486,
+      "expanded_density_pct": 85.7,
+      "success": true
+    },
+    {
+      "scenario": "Open 10% walls",
+      "algorithm": "A* (Euclidean)",
+      "steps": 48,
+      "runtime_ms": 0.927,
+      "nodes_expanded": 540,
+      "expanded_density_pct": 95.2,
+      "success": true
+    },
+    {
+      "scenario": "Open 10% walls",
+      "algorithm": "Q-Learning",
+      "steps": 48,
+      "runtime_ms": 290.953,
+      "nodes_expanded": 566,
+      "expanded_density_pct": 99.8,
+      "success": true
+    },
+    {
+      "scenario": "Scattered 25% walls",
+      "algorithm": "Dijkstra",
+      "steps": 48,
+      "runtime_ms": 0.659,
+      "nodes_expanded": 458,
+      "expanded_density_pct": 98.1,
+      "success": true
+    },
+    {
+      "scenario": "Scattered 25% walls",
+      "algorithm": "A* (Manhattan)",
+      "steps": 48,
+      "runtime_ms": 0.323,
+      "nodes_expanded": 215,
+      "expanded_density_pct": 46.0,
+      "success": true
+    },
+    {
+      "scenario": "Scattered 25% walls",
+      "algorithm": "A* (Euclidean)",
+      "steps": 48,
+      "runtime_ms": 0.577,
+      "nodes_expanded": 371,
+      "expanded_density_pct": 79.4,
+      "success": true
+    },
+    {
+      "scenario": "Scattered 25% walls",
+      "algorithm": "Q-Learning",
+      "steps": 48,
+      "runtime_ms": 336.182,
+      "nodes_expanded": 459,
+      "expanded_density_pct": 98.3,
+      "success": true
+    },
+    {
+      "scenario": "Dense 35% walls",
+      "algorithm": "Dijkstra",
+      "steps": 48,
+      "runtime_ms": 0.92,
+      "nodes_expanded": 401,
+      "expanded_density_pct": 96.2,
+      "success": true
+    },
+    {
+      "scenario": "Dense 35% walls",
+      "algorithm": "A* (Manhattan)",
+      "steps": 48,
+      "runtime_ms": 0.171,
+      "nodes_expanded": 107,
+      "expanded_density_pct": 25.7,
+      "success": true
+    },
+    {
+      "scenario": "Dense 35% walls",
+      "algorithm": "A* (Euclidean)",
+      "steps": 48,
+      "runtime_ms": 0.337,
+      "nodes_expanded": 205,
+      "expanded_density_pct": 49.2,
+      "success": true
+    },
+    {
+      "scenario": "Dense 35% walls",
+      "algorithm": "Q-Learning",
+      "steps": 48,
+      "runtime_ms": 392.351,
+      "nodes_expanded": 402,
+      "expanded_density_pct": 96.4,
+      "success": true
+    },
+    {
+      "scenario": "Twisty maze",
+      "algorithm": "Dijkstra",
+      "steps": 256,
+      "runtime_ms": 0.413,
+      "nodes_expanded": 337,
+      "expanded_density_pct": 100.0,
+      "success": true
+    },
+    {
+      "scenario": "Twisty maze",
+      "algorithm": "A* (Manhattan)",
+      "steps": 256,
+      "runtime_ms": 0.412,
+      "nodes_expanded": 317,
+      "expanded_density_pct": 94.1,
+      "success": true
+    },
+    {
+      "scenario": "Twisty maze",
+      "algorithm": "A* (Euclidean)",
+      "steps": 256,
+      "runtime_ms": 0.463,
+      "nodes_expanded": 321,
+      "expanded_density_pct": 95.3,
+      "success": true
+    },
+    {
+      "scenario": "Twisty maze",
+      "algorithm": "Q-Learning",
+      "steps": 256,
+      "runtime_ms": 977.493,
+      "nodes_expanded": 336,
+      "expanded_density_pct": 99.7,
+      "success": true
+    }
+  ]
+}
