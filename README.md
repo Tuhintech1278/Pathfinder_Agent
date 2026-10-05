@@ -1,17 +1,15 @@
 <div align="center">
 
-# 🧭 Pathfinder: Heuristic Graph Pathfinding Agent
+# 🧭 PathFinder AI: Heuristic Graph Pathfinding Agent
 
 **Pick a start. Pick a destination. Watch the agent find the way.**
 
-A search framework where virtual agents navigate grid mazes, with **A\***, **Dijkstra** and **Q-Learning** all written from scratch, plus live visualizations and performance logs.
+A Python search framework where virtual agents navigate grid mazes, with **A\***, **Dijkstra** and **Q-Learning** all written from scratch, plus a live interactive app, performance metrics and exportable visualization logs.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-4B8BBE)
+![Matplotlib](https://img.shields.io/badge/Charts-Matplotlib-11557c)
 ![Status](https://img.shields.io/badge/status-complete-2ea44f)
-![Made with love](https://img.shields.io/badge/made%20with-curiosity-ff4d8d)
 
 </div>
 
@@ -19,23 +17,28 @@ A search framework where virtual agents navigate grid mazes, with **A\***, **Dij
 
 ## 📸 Preview
 
-> 💡 **Add your screenshots here.** Save images in a `docs/` folder and replace the lines below.
+> 💡 **Add your screenshots here.** Save them in a `docs/` folder and keep the file names below (or edit the lines).
+> - `docs/app.png`: a screenshot of the running `app.py` window (Windows + Shift + S)
+> - `docs/summary_chart.png`: copy it from `results/summary_chart.png` after running `main.py`
+> - `docs/comparison.png`: copy it from `results/comparison.png` after pressing **Compare ALL agents**
 
-| Interactive web app | Benchmark output |
+| Interactive app | Benchmark summary |
 |:---:|:---:|
-| ![Web app](docs/web_app.png) | ![Benchmark](docs/summary_chart.png) |
+| ![App](docs/app.png) | ![Summary](docs/summary_chart.png) |
+
+![Comparison](docs/comparison.png)
 
 ---
 
 ## ✨ Features
 
 - 🎯 **Choose your own start and destination** by clicking on the board.
-- 🧱 **Draw walls and obstacles**, or generate random obstacle fields and twisty mazes.
+- 🧱 **Draw walls**, or generate random obstacle fields and twisty mazes.
 - 🤖 **Four agents to compare:** Dijkstra, A\* (Manhattan), A\* (Euclidean) and Q-Learning.
-- 🎬 **Live animation:** watch the search spread, then the agent runs along the final route.
-- 📊 **Metrics tracked on every run:** path steps, runtime, nodes expanded and expanded-node density.
-- 📁 **Exportable logs:** CSV, JSON and PNG visualizations of every run.
-- 🌐 **Two versions:** a Python version (desktop window and batch benchmark) and a zero-install web version.
+- 🎬 **Live animation:** explored cells glow from purple to cyan, then the agent runs along a glowing pink route.
+- 📊 **Metrics on every run:** path steps, runtime, nodes expanded and expanded-node density.
+- 📁 **Exports:** CSV and JSON run logs, PNG comparison images, benchmark charts and an animated GIF.
+- 📦 **Light on dependencies:** only `matplotlib`. The app window uses `tkinter`, which comes with Python.
 
 ---
 
@@ -46,7 +49,7 @@ A search framework where virtual agents navigate grid mazes, with **A\***, **Dij
 | **Dijkstra** | Expands outward equally in all directions, like a ripple | ✅ | Reliable baseline |
 | **A\* (Manhattan)** | Dijkstra plus a distance-to-goal guess that steers the search | ✅ | Fewest nodes on grids |
 | **A\* (Euclidean)** | Same as A\*, but with a straight-line guess | ✅ | Admissible, but a weaker guide on 4-direction grids |
-| **Q-Learning** | Learns by trial and error from rewards and penalties | ✅ (after training) | No map knowledge needed |
+| **Q-Learning** | Learns by trial and error from rewards and penalties | ✅ (after training) | Needs no map knowledge |
 
 **A\* in one line:** always expand the cell with the lowest `f = g + h`, where `g` is the cost so far and `h` is the heuristic guess to the goal. Dijkstra is the same algorithm with `h = 0`.
 
@@ -73,33 +76,42 @@ flowchart LR
 
 ## 🚀 Quick start
 
-### 🐍 Python version
+**Requirements:** Python 3.9 or newer (during installation on Windows, tick *"Add python.exe to PATH"*).
 
 ```bash
-cd python_version
+# 1. Get the code
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd YOUR-REPO
+
+# 2. Create and activate a virtual environment (Windows)
 python -m venv venv
-venv\Scripts\activate          # Windows  (Mac/Linux: source venv/bin/activate)
+venv\Scripts\activate
+#   Mac/Linux:  source venv/bin/activate
+
+# 3. Install the dependency
 pip install -r requirements.txt
 
-python app.py                  # interactive window
-python main.py                 # full benchmark, saves to results/
-python main.py --live          # live A* animation
-python main.py --gif           # save the animation as a GIF
+# 4. Run it
+python app.py            # interactive app: click start/destination and run agents
+python main.py           # automatic benchmark on preset mazes -> results/
+python main.py --live    # also open a live A* animation window
+python main.py --gif     # also save the A* animation as a GIF
 ```
-
-### 🌐 Web version
-
-No installation needed. Open `web_version/index.html` in any browser. For auto-refresh while developing, use the **Live Server** extension in VS Code.
 
 ---
 
-## 🎮 How to use
+## 🎮 Using the interactive app (`app.py`)
 
-1. Choose **Place start** and click the board, then **Place destination** and click again.
-2. Use **Draw walls** to add obstacles (click or drag).
-3. Pick an agent and press **Run agent**.
-4. Press **Compare all agents** to see every agent on the same maze.
-5. Export the run log as **CSV / JSON**, or save the board as an **image**.
+1. Under **Click mode**, choose **Start**, then click a square on the board.
+2. Choose **Destination**, then click another square.
+3. Choose **Draw walls** to add obstacles (click or drag), or **Erase** to remove them.
+4. Select an agent: **Dijkstra**, **A\* Manhattan**, **A\* Euclidean** or **Q-Learning**.
+5. Press **▶ RUN AGENT** and watch the search. The stat cards show steps, nodes expanded, density and runtime.
+6. Press **Compare ALL agents** to run all four on the same board and save `results/comparison.png`.
+7. Use **Random walls**, **Twisty maze** and **Clear everything** to set up new boards.
+8. Press **Export run log (CSV + JSON)** to save every run to `results/`.
+
+> Q-Learning trains by trial and error first, so the window may pause for a second or two. That is normal.
 
 ---
 
@@ -128,35 +140,45 @@ Benchmark on a 25 × 25 grid (`python main.py`). Every agent found the optimal p
 - **Q-Learning reaches the optimum but pays for it in training time**, hundreds of times slower here.
 - **In a one-route maze, heuristics barely help**, because there are few alternatives to rule out.
 
-*Runtimes vary by machine. Run `python main.py` yourself to reproduce the table.*
+*Runtimes vary by machine, while step and node counts are reproducible. Run `python main.py` to regenerate the table.*
+
+---
+
+## 📤 Output files
+
+Everything is written to the `results/` folder:
+
+| File | Created by | What it contains |
+|---|---|---|
+| `Open_10pct_walls.png`, `Scattered_25pct_walls.png`, `Dense_35pct_walls.png`, `Twisty_maze.png` | `main.py` | All four agents side by side on each maze |
+| `summary_chart.png` | `main.py` | Bar charts of steps, nodes expanded and runtime |
+| `metrics.csv` / `metrics.json` | `main.py` | Benchmark metrics for every scenario and agent |
+| `astar_search.gif` | `main.py --gif` | Animation of A\* exploring the maze |
+| `run_log.csv` / `run_log.json` | `app.py` | Every run you did in the interactive app |
+| `comparison.png` | `app.py` | All agents compared on your own board |
 
 ---
 
 ## 🗂️ Project structure
 
 ```
-pathfinding-agent/
-├── python_version/
-│   ├── algorithms.py      # A*, Dijkstra, Q-Learning (from scratch)
-│   ├── grid.py            # obstacle fields, maze generator, solvability check
-│   ├── main.py            # automated benchmark + visualization export
-│   ├── app.py             # interactive desktop app (tkinter)
-│   └── requirements.txt
-├── web_version/
-│   ├── index.html         # page structure
-│   ├── style.css          # map-chart styling
-│   └── script.js          # algorithms + animation + export (JavaScript)
-├── docs/                  # screenshots
-└── README.md
+├── app.py              # interactive app (tkinter): click start/goal, run agents
+├── main.py             # automated benchmark + visualization export
+├── algorithms.py       # A*, Dijkstra, Q-Learning (written from scratch)
+├── grid.py             # obstacle fields, maze generator, solvability check
+├── requirements.txt    # matplotlib
+├── docs/               # screenshots for this README
+└── results/            # generated outputs (created when you run the code)
 ```
 
 ---
 
-## 🛠️ Built with
+## 🔧 Customizing
 
-- **Python 3**: algorithms, benchmarking and `tkinter` desktop UI
-- **Matplotlib**: result charts and animations
-- **HTML / CSS / JavaScript**: the browser version, with no libraries or dependencies
+- **Board size for the benchmark:** change `SIZE = 25` in `main.py`.
+- **Add a maze scenario:** add an entry to the `SCENARIOS` dictionary in `main.py`.
+- **Add your own agent:** write a function with the same inputs and outputs as the ones in `algorithms.py`, then register it in the `ALGORITHMS` dictionary.
+- **App colors:** edit the `theme` block at the top of `app.py`.
 
 ---
 
