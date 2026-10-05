@@ -15,20 +15,7 @@ A Python search framework where virtual agents navigate grid mazes, with **A\***
 
 ---
 
-## 📸 Preview
 
-> 💡 **Add your screenshots here.** Save them in a `docs/` folder and keep the file names below (or edit the lines).
-> - `docs/app.png`: a screenshot of the running `app.py` window (Windows + Shift + S)
-> - `docs/summary_chart.png`: copy it from `results/summary_chart.png` after running `main.py`
-> - `docs/comparison.png`: copy it from `results/comparison.png` after pressing **Compare ALL agents**
-
-| Interactive app | Benchmark summary |
-|:---:|:---:|
-| ![App](docs/app.png) | ![Summary](docs/summary_chart.png) |
-
-![Comparison](docs/comparison.png)
-
----
 
 ## ✨ Features
 
@@ -203,9 +190,9 @@ Everything is written to the `results/` folder:
 
 ## 👤 Author
 
-**Your Name**
-🎓 Your College / Internship Organization
-🔗 [GitHub](https://github.com/YOUR-USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)
+**Tuhin Mondal**
+🎓 BRAINWARE UNIVERSITY / Progree
+🔗 [GitHub](https://github.com/Tuhintech1278) · [LinkedIn](https://www.linkedin.com/in/tuhin-mondal-87a38635a/)
 
 ---
 
