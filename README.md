@@ -203,9 +203,9 @@ Everything is written to the `results/` folder:
 
 ## 👤 Author
 
-**Your Name**
-🎓 Your College / Internship Organization
-🔗 [GitHub](https://github.com/YOUR-USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)
+**Tuhin Mondal**
+🎓 Brainware Universiy / Progree
+🔗 [GitHub](https://github.com/Tuhintech1278) · [LinkedIn](https://www.linkedin.com/in/tuhin-mondal-87a38635a/)
 
 ---
 
