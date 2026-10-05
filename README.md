@@ -17,10 +17,7 @@ A Python search framework where virtual agents navigate grid mazes, with **A\***
 
 ## 📸 Preview
 
-> 💡 **Add your screenshots here.** Save them in a `docs/` folder and keep the file names below (or edit the lines).
-> - `docs/app.png`: a screenshot of the running `app.py` window (Windows + Shift + S)
-> - `docs/summary_chart.png`: copy it from `results/summary_chart.png` after running `main.py`
-> - `docs/comparison.png`: copy it from `results/comparison.png` after pressing **Compare ALL agents**
+
 
 | Interactive app | Benchmark summary |
 |:---:|:---:|
