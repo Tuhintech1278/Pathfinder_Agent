@@ -80,8 +80,8 @@ flowchart LR
 
 ```bash
 # 1. Get the code
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
+git clone https://github.com/Tuhintech1278/Pathfinder_Agent.git
+cd Pathfinder_Agent
 
 # 2. Create and activate a virtual environment (Windows)
 python -m venv venv
