@@ -192,7 +192,7 @@ Everything is written to the `results/` folder:
 
 **Tuhin Mondal**
 🎓 BRAINWARE UNIVERSITY / Progree
-🔗 [GitHub](https://github.com/Tuhintech1278) · [LinkedIn](https://www.linkedin.com/in/Tuhin-Mondal)
+🔗 [GitHub](https://github.com/Tuhintech1278) · [LinkedIn](https://www.linkedin.com/in/tuhin-mondal-87a38635a/)
 
 ---
 
